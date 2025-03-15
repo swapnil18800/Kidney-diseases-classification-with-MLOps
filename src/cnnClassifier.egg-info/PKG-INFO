@@ -1,3 +1,18 @@
+Metadata-Version: 2.2
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/swapnil18800/Kidney-diseases-classification-with-MLOps
+Author: swapnil18800
+Author-email: swapnil18800@gmail.com
+Project-URL: Bug Tracker, https://github.com/swapnil18800/Kidney-diseases-classification-with-MLOps/issues
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
 # Kidney-diseases-classification-with-MLOps
 A deep learning project implementation with an end-to-end ML pipeline to diagnose and classify kidney tumors into benign or malignant
 
