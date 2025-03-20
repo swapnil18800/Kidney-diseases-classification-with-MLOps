@@ -2,3 +2,846 @@
 [2025-03-15 18:50:07,120: INFO: main: testing logs]
 [2025-03-15 18:53:47,712: INFO: main: testing logs]
 [2025-03-15 18:54:23,931: INFO: main: testing logs]
+[2025-03-16 09:58:09,536: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 09:58:09,536: ERROR: main: [Errno 2] No such file or directory: 'config\\config.yaml\\config']
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml\\config'
+[2025-03-16 10:01:35,078: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 10:01:35,078: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 10:01:35,078: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 10:01:35,093: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-03-16 10:04:56,900: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 10:04:56,900: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 10:04:56,900: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 10:04:56,900: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-03-16 12:23:41,390: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 12:23:41,392: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 12:23:41,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 12:23:41,392: INFO: common: created directory at: artifacts]
+[2025-03-16 12:23:41,392: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 12:23:41,392: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-16 12:23:41,775: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:11:00,206: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:11:00,206: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:11:00,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:11:00,206: INFO: common: created directory at: artifacts]
+[2025-03-16 13:11:00,206: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:11:00,214: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-16 13:11:00,516: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:12:24,118: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:12:24,118: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:12:24,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:12:24,118: INFO: common: created directory at: artifacts]
+[2025-03-16 13:12:24,133: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:12:24,134: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-16 13:12:24,434: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:12:28,386: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:12:28,386: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:12:28,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:12:28,395: INFO: common: created directory at: artifacts]
+[2025-03-16 13:12:28,395: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:12:28,395: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-16 13:12:28,687: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:13:29,816: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:13:29,816: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:13:29,816: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:13:29,824: INFO: common: created directory at: artifacts]
+[2025-03-16 13:13:29,824: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:13:29,824: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-16 13:13:30,146: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:14:30,680: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:14:30,680: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:14:30,686: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:14:30,686: INFO: common: created directory at: artifacts]
+[2025-03-16 13:14:30,686: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:14:30,686: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-03-16 13:14:30,980: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:17:53,468: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:17:53,468: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:17:53,468: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:17:53,468: INFO: common: created directory at: artifacts]
+[2025-03-16 13:17:53,468: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:17:53,468: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-16 13:17:53,796: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:18:03,990: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:18:03,990: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:18:03,990: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:18:03,990: INFO: common: created directory at: artifacts]
+[2025-03-16 13:18:03,990: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:18:03,990: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-16 13:18:04,306: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:18:20,378: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:18:20,378: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:18:20,378: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:18:20,378: INFO: common: created directory at: artifacts]
+[2025-03-16 13:18:20,378: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:18:20,388: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-16 13:18:20,682: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))]
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\spadhi\Documents\Amadeus\Kidney-diseases-classification-with-MLOps\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    raise e
+  File "c:\users\spadhi\documents\amadeus\kidney-diseases-classification-with-mlops\src\cnnClassifier\components\data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\spadhi\AppData\Local\anaconda3\envs\genAI\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=14dicizHOJSj0tRzXf4ALE44iDS2GkCv_ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+[2025-03-16 13:25:19,262: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-16 13:25:19,264: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-16 13:25:19,265: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-16 13:25:19,266: INFO: common: created directory at: artifacts]
+[2025-03-16 13:25:19,266: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-16 13:25:19,267: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-16 13:25:44,565: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-16 13:25:45,356: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-20 08:33:05,648: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-20 08:33:05,649: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-20 08:33:05,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-20 08:33:05,651: INFO: common: created directory at: artifacts]
+[2025-03-20 08:33:05,652: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-20 08:33:05,652: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-20 08:33:30,987: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/14dicizHOJSj0tRzXf4ALE44iDS2GkCv_/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-03-20 08:33:31,499: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
